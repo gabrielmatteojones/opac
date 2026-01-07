@@ -1,11 +1,9 @@
-title: Minima Demo Site
+title: Corte dei Lettori
 author:
-  name: GitHub User
-  email: your-email@domain.com
+  name: Gabriel Jones
+  email: cortedeilettori@18f.it
 description: >
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Benvenuti nella Corte dei lettori, la mia biblioteca personale dove i libri sono al centro di tutto!
 
 minima:
   date_format: "%b %-d, %Y"
@@ -15,8 +13,8 @@ minima:
   show_excerpts: true
 
 # Build settings
-baseurl: /minima
-remote_theme: jekyll/minima
+baseurl: /opac
+remote_theme: gabrielmatteojones/opac
 plugins:
   - jekyll-feed
   - jekyll-remote-theme
@@ -25,3 +23,8 @@ plugins:
 sass:
   quiet_deps: true
   silence_deprecations: [import]
+
+collections:
+  books:
+    output: true
+    permalink: /opac/:title/
