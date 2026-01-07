@@ -1,0 +1,14 @@
+---
+layout: default
+title: "Il mio OPAC"
+---
+
+<h1>Il mio OPAC</h1>
+
+<ul>
+  {% for book in site.books %}
+    <li>
+      <a href="{{ book.url }}">{{ book.title }}</a> - {{ book.authors | join: ", " }}
+    </li>
+  {% endfor %}
+</ul>
